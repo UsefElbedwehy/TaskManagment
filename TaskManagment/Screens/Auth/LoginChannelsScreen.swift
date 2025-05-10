@@ -35,7 +35,7 @@ struct LoginChannelsScreen: View {
                     .frame(height: 1)
                     .foregroundColor(.secondary.opacity(0.5))
                 Spacer()
-                Text("Or")
+                Text("or")
                     .font(.callout)
                     .foregroundStyle(.secondary)
                 Spacer()
@@ -44,18 +44,9 @@ struct LoginChannelsScreen: View {
                     .foregroundColor(.secondary.opacity(0.5))
             }
             Spacer().frame(height: 20)
-            CustomButton(
-                text: "Sign in with apple",
-                systemIconName: "apple.logo",
-                width: UIScreen.main.bounds.width * 0.6,
-                onTap: {
-                    
-                },
-                backgroundColor: .secondary.opacity(0.2),
-                fontColor: .primary,
-                isButtonEnabled: .constant(true),
-
-            )
+            AppleSignInButton() {
+                print("Tapped Btn: Sign In With Apple!")
+            }
             CustomButton(
                 text: "Sign in with google",
                 imageName: "google",

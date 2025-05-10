@@ -98,7 +98,7 @@ extension CustomTabBarView {
             Button {
                 plusAction()
             } label: {
-                Image(systemName: "plus")
+                Image(systemName: TabBarItem.plus.iconName)
                     .resizable()
                     .frame(width: 30, height: 30)
                     .foregroundColor(.white)
