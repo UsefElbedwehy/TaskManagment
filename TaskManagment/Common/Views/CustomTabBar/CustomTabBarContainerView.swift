@@ -33,7 +33,7 @@ struct CustomTabBarContainerView_Previews: PreviewProvider {
     static let tabs: [TabBarItem] = [.home, .plus, .profile]
     static var previews: some View {
         CustomTabBarContainerView(selection: .constant(tabs.first!)) {
-            Color.red
+            Color.blue
         }
     }
 }
